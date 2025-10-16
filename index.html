@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RandomUser Profile — Frontend Test</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+    <header class="card-header">
+      <h1>Profile</h1>
+      <button id="refreshBtn" title="Load another profile">New Profile</button>
+    </header>
+
+    <section class="profile">
+      <div class="avatar-wrap">
+        <img id="avatar" alt="User avatar" src="" />
+      </div>
+
+      <div class="info">
+        <h2 id="name">—</h2>
+        <p class="role" id="username">@username</p>
+
+        <div class="fields">
+          <div><strong>Email</strong><div id="email">—</div></div>
+          <div><strong>Phone</strong><div id="phone">—</div></div>
+          <div><strong>Location</strong><div id="location">—</div></div>
+          <div><strong>Age</strong><div id="age">—</div></div>
+          <div><strong>UUID</strong><div id="uuid">—</div></div>
+        </div>
+
+        <p class="bio" id="bio">This profile was fetched dynamically from <code>randomuser.me</code>. Click <em>New Profile</em> to load another user.</p>
+
+        <div class="actions">
+          <a id="openProfile" href="#" target="_blank" rel="noopener">Open raw JSON</a>
+          <a id="downloadAvatar" href="#" download="avatar.jpg">Download Avatar</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="card-footer">
+      <small>Data from <a href="https://randomuser.me/" target="_blank" rel="noopener">randomuser.me</a> — for demo/interview use.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
